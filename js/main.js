@@ -40,10 +40,10 @@ function updateList() {
     $groceryUl.innerHTML = ''
 
     // using forEach to loop over $groceryList
-    /* $groceryList.forEach(item => {
+    /* /$groceryList.forEach(item => {
         // pushing html with the item variable to the $listItems array
         $listItems.push(`<li>${item}</li>`)
-    })
+    }) */
 
 //Using map to create template from each item from each itme and adding it to the arry
 $listItems =$groceryList.map(item => `<li>${item}</li>`)
@@ -65,7 +65,6 @@ function addItem(item) {
         console.log("Please supply an item to add")
     }
 }
-
 
 function removeItem(item) {
     // filter through the array and print it on the page
